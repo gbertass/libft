@@ -64,6 +64,7 @@ int	main(void)
 	memcpy(dest, src, n);
     printf("string pos memcpy(original): %s\n\n\n", dest);
 
+
 	printf("********TESTE FT_ISPRINT:\n");
 	int resultado = ft_isprint(45);
     printf("teste ft_isprint:%d\n", resultado);
@@ -184,16 +185,15 @@ int	main(void)
 
 
 	printf("********FT_MEMCMP:\n");
-	char	str1[] = "zyxbcdefgh";
-	char	str2[] = "abcdefgxyz";
-	size_t n = 2;
+	char	str1[] = "abcdef";
+	char	str2[] = "abc";
+	size_t n = 4;
 	int	resultado;
 	int	original;
 	resultado = ft_memcmp(str1, str2, n);
-	printf("string1: %s\nstriresultado strdup(original):%sng2: %s\n e N: %zu\n", str1, str2, n);
-	printf("resultado de str[i]: %d\n", resultado);
+	printf("string1:%s\nstring2:%s\nn:%zu\nresultado:%d\n", str1, str2, n, resultado);
 	original = memcmp(str1, str2, n);
-	printf("resultado de str[i] (original): %d\n\n\n", original);
+	printf("resultado de memcmp(original): %d\n\n\n", original);
 
 
 
@@ -245,7 +245,46 @@ int	main(void)
 
 ------------------------------------------------------------------
 	
-	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@ PARTE 2:\n\n\n")
+	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@ PARTE 2:\n\n\n");
+
+	printf("********TESTE FT_ITOA:\n");
+	int n = -237;
+	printf("Valor de n:%d\n", n);
+	printf("Funcao ft_itoa:%s\n", ft_itoa(n));
+	printf("\n\n\n");
+
+
+	printf("********TESTE FT_STRITERI:\n");
+	void convert_to_uppercase(unsigned int i, char *c)
+	{
+		*c = ft_toupper(*c);
+	}
+	int main(void)
+	{
+		char s[] = "hello world";
+		ft_striteri(s, &convert_to_uppercase);
+		printf("%s\n", s);  // imprime "HELLO WORLD"
+		return 0;
+		printf("\n\n\n");
+	}
+
+
+	printf("********TESTE FT_STRMAPI:\n");
+	char touppercase(unsigned int i, char c)
+	{
+   	 return (char) (c >= 'a' && c <= 'z' ? c - 'a' + 'A' : c);
+	}
+
+	int	main()
+	{
+	const char s[] = "hello world";
+	char	*depois;
+	depois = ft_strmapi(s, touppercase);
+	printf("%s\n", depois);  // imprime "HELLO WORLD"
+	return 0;
+	printf("\n\n\n");
+	}
+
 
 	printf("********TESTE FT_PUTCHAR_FD:\n");
 	char c = 'B';
@@ -253,18 +292,21 @@ int	main(void)
 	printf("\n\n\n");
 
 
+
 	printf("********TESTE FT_PUTSTR_FD:\n");
 	char *s = "superMario";
 	ft_putstr_fd(s, 1);
 	printf("\n\n\n");
 
+
 	
 	printf("********TESTE FT_PUTENDL_FD:\n");
 	char *s = "superMarioWorld";
 	ft_putendl_fd(s, 1);
+
 	
 
-	printf("********TESTE FT_PUTNBR_FD:\n")
+	printf("********TESTE FT_PUTNBR_FD:\n");
 	ft_putnbr_fd(10, 1);
 	write(1, "\n", 1);
 	ft_putnbr_fd(-2147483648, 1);

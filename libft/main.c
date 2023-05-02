@@ -274,6 +274,18 @@ int	main(void)
 	printf("resultado ft_strtrim:%s\n\n\n", result);
 
 
+	printf("********TESTE FT_SPLIT:\n");
+	const char s[] = "elefante toma banho";
+	char c = 'a';
+	char **str = ft_split(s, c);
+	printf("conteudo de j[0]:%s\n", str[0]);
+	printf("conteudo de j[1]:%s\n", str[1]);
+	printf("conteudo de j[2]:%s\n", str[2]);
+	printf("conteudo de j[3]:%s\n", str[3]);
+	printf("conteudo de j[4]:%s\n", str[4]);
+	printf("conteudo de j[5]:%s\n", str[5]);
+
+
 	printf("********TESTE FT_ITOA:\n");
 	int n = -237;
 	printf("Valor de n:%d\n", n);

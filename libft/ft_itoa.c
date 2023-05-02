@@ -6,13 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 17:52:24 by gbertass          #+#    #+#             */
-/*   Updated: 2023/04/28 18:41:05 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/02 13:32:44 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_intlen(long nb)
+int	ft_intlen(long nb)
 {
 	int	len;
 

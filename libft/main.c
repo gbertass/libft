@@ -247,6 +247,25 @@ int	main(void)
 	
 	printf("@@@@@@@@@@@@@@@@@@@@@@@@@@ PARTE 2:\n\n\n");
 
+	printf("********TESTE FT_SUBSTR:\n");
+	const char s[] = "abobora assada";
+	size_t l = 6;
+	unsigned int start = 3;
+	char	*teste;
+	teste = ft_substr(s, start, l);
+	printf("resultado ft_substr:%s\n", teste);
+
+	
+
+	printf("********TESTE FT_STRJOIN:\n");
+	const char s1[] = "box";
+	const char s2[] = "banho";
+	char *fun;
+	fun = ft_strjoin(s1,s2);
+	printf("resultado de ft_strjoin:%s\n\n\n", fun);
+
+
+
 	printf("********TESTE FT_ITOA:\n");
 	int n = -237;
 	printf("Valor de n:%d\n", n);

@@ -266,6 +266,14 @@ int	main(void)
 
 
 
+	printf("********TESTE FT_STRTRIM:\n");
+	const char s1[]= "lorem ipsum dolor sit amet";
+	const char set[] = "te";
+	char	*result;	
+	result = ft_strtrim(s1, set);
+	printf("resultado ft_strtrim:%s\n\n\n", result);
+
+
 	printf("********TESTE FT_ITOA:\n");
 	int n = -237;
 	printf("Valor de n:%d\n", n);

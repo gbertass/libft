@@ -42,7 +42,7 @@ char	**ft_split(char const *s, char c)
 	return (str);
 }
 
-/*int	main()
+int	main()
 {
 	const char s[] = "   lorem   ipsum dolor     sit amet, consectetur   adipiscing elit. Sed non risus. Suspendisse   ";
 	char c = ' ';
@@ -60,4 +60,5 @@ char	**ft_split(char const *s, char c)
 	printf("conteudo de j[9]:%s\n", str[9]);
 	printf("conteudo de j[10]:%s\n", str[10]);
 	printf("conteudo de j[11]:%s\n", str[11]);
-}*/
+	printf("conteudo de j[11]:%s\n", str[11]);
+}

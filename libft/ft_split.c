@@ -59,4 +59,5 @@ char	**ft_split(char const *s, char c)
 	printf("conteudo de j[9]:%s\n", str[9]);
 	printf("conteudo de j[10]:%s\n", str[10]);
 	printf("conteudo de j[11]:%s\n", str[11]);
+	printf("conteudo de j[11]:%s\n", str[11]);
 }*/

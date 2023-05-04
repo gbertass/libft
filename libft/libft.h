@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:31:31 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/04 11:37:37 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/04 19:29:55 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,12 @@
 # include <string.h>
 # include <ctype.h>
 # include <stdlib.h>
+
+typedef	struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);

@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 15:41:40 by gbertass          #+#    #+#             */
-/*   Updated: 2023/04/20 15:21:02 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/04 11:52:19 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	begin = src;
 	end = dest;
+	if (!dest && !src)
+		return (NULL);
 	while (i < n)
 	{
 		end[i] = begin[i];

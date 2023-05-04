@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 17:14:41 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/02 20:08:22 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/04 11:39:09 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ char	**ft_split(char const *s, char c)
 			str[j][k++] = s[i++];
 		str[j][k] = '\0';
 		j++;
-		k = 0;
 	}
 	str[j] = NULL;
 	return (str);
@@ -44,7 +43,7 @@ char	**ft_split(char const *s, char c)
 
 /*int	main()
 {
-	const char s[] = "   lorem   ipsum dolor     sit amet, consectetur   adipiscing elit. Sed non risus. Suspendisse   ";
+	const char s[] = "  ipsum dolorsit amet.
 	char c = ' ';
 	char **str = ft_split(s, c);
 	

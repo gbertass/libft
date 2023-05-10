@@ -354,3 +354,30 @@ int	main(void)
 	write(1, "\n", 1);
 	return (0);
 }
+--------------------------------------------------------
+	BONUS
+
+	printf("FT_LSTADD_BACK") //PRECISA SER CORRIGIDO
+	s_list *next = NULL;
+    s_list *new_node;
+
+    // Adicionando três nós na lista
+    for (int i = 1; i <= 3; i++)
+    {
+        new_node = malloc(sizeof(t_list));
+        new_node->data = i;
+        new_node->next = NULL;
+        ft_lstadd_back(&head, new_node);
+    }
+
+    // Percorrendo a lista e imprimindo os valores dos nós
+    t_list *temp = head;
+    while (temp != NULL)
+    {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\n");
+
+    return 0;
+}

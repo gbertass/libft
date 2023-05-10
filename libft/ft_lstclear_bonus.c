@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/09 12:42:28 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/09 16:11:30 by gbertass         ###   ########.fr       */
+/*   Created: 2023/05/10 18:41:18 by gbertass          #+#    #+#             */
+/*   Updated: 2023/05/10 18:45:46 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	int	cont;
-
-	cont = 0;
-	while (lst != NULL)
+	if (lst != NULL && del != NULL)
 	{
-		cont++;
-		lst = lst->next;
+		while (!lst)
+		{
+			del(*lst->content);
+			free(lst);
+			lst = NULL;
+		}
 	}
-	return (cont);
+	*lst = NULL;
 }

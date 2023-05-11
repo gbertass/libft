@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 18:41:18 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/10 18:45:46 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/11 18:55:42 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,17 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	if (lst != NULL && del != NULL)
+	t_list	*aux;
+
+	if (lst != NULL)
 	{
-		while (!lst)
+		aux = *lst;
+		while (*lst != NULL)
 		{
-			del(*lst->content);
-			free(lst);
-			lst = NULL;
+			*lst = aux->next;
+			ft_lstdelone(aux, del);
+			aux = *lst;
 		}
+		*lst = NULL;
 	}
-	*lst = NULL;
 }

@@ -11,7 +11,8 @@ PART2 =	ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
 		ft_putendl_fd.c ft_putnbr_fd.c \
 
 BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
-		ft_lstlast_bonus.c ft_lstadd_back_bonus.c 
+		ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
+		ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c \
 
 SRC = ${PART1} ${PART2}
 OBJS = ${SRC:.c=.o}
@@ -48,6 +49,6 @@ tclean: clean
 re: fclean all
 
 teste:
-		${CC} ${CFLAGS} ${INCLUDE} main.c ${NAME} -o teste
+		${CC} ${CFLAGS} ${INCLUDE} main_part1.c ${NAME} -o teste
 
 .PHONY: all clean fclean re

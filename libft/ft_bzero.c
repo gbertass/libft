@@ -25,3 +25,5 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
+//write zeroes to a byte string

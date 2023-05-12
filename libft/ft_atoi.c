@@ -40,3 +40,5 @@ int	ft_atoi(const char *nptr)
 	nb_result = nb_result * signal;
 	return (nb_result);
 }
+
+//convert ASCII string to integer

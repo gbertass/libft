@@ -19,3 +19,6 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+
+//tests for any character for which isalpha(3) or isdigit(3) is true.  The value of 
+//the argument must be representable as an unsigned char or the value of EOF.

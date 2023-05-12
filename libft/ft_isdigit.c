@@ -20,3 +20,5 @@ int	ft_isdigit(int c)
 	}
 	return (0);
 }
+
+//function tests for a decimal digit character

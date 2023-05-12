@@ -58,3 +58,6 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+//The itoa() function coverts the integer n into a character string. 
+//The string is placed in the buffer passed, which must be large enough to hold the output

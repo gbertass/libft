@@ -27,3 +27,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+//function locates the first occurrence of of the character c (an unsigned char) in the first n bytes 
+//of the string pointed to, by the argument str.

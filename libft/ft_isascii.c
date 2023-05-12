@@ -20,3 +20,6 @@ int	ft_isascii(int c)
 	}
 	return (0);
 }
+
+//The isascii() function tests for an ASCII character, which is any character 
+//between 0 and octal 0177 inclusive.

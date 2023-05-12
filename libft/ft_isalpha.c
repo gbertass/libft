@@ -20,3 +20,5 @@ int	ft_isalpha(int c)
 	}
 	return (0);
 }
+
+//function tests for any character for which isupper(3) or islower(3) is true

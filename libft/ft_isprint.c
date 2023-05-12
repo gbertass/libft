@@ -20,3 +20,5 @@ int	ft_isprint(int c)
 	}
 	return (0);
 }
+
+//function tests for any printing character, including space (‘ ’)

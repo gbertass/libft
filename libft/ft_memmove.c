@@ -6,11 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:17:22 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 17:46:50 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:11:08 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include<stdio.h>
+
 //copies n characters from str2 to str1, but for overlapping memory blocks
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
@@ -22,22 +24,16 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	pdest = dest;
 	if (dest == NULL && src == NULL)
 		return (NULL);
-	if (pdest < psrc)
+	if (pdest > psrc)
 	{
-		while (n-- > 0)
-			*pdest++ = *psrc++;
-	}
-	else
-	{
-		pdest = pdest + n;
-		psrc = psrc + n;
-		while (n-- > 0)
+		while (n > 0)
 		{
-			--pdest;
-			--psrc;
-			*pdest = *psrc;
+			n--;
+			pdest[n] = psrc[n];
 		}
 	}
+	else
+		ft_memcpy(pdest, psrc, n);
 	return (dest);
 }
 

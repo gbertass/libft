@@ -26,3 +26,5 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (str);
 }
+/*copies the character c (an unsigned char) 
+to the first n characters of the string pointed to, by the argument str.*/

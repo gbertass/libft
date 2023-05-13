@@ -29,3 +29,5 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)str + i);
 	return (NULL);
 }
+/*searches for the first occurrence of the character c (an unsigned char) 
+in the string pointed to by the argument str*/

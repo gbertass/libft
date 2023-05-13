@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	begin = src;
 	end = dest;
-	if (!dest && !src)
+	if (dest == NULL && src == NULL)
 		return (NULL);
 	while (i < n)
 	{
@@ -30,3 +30,5 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (end);
 }
+
+//copies n characters from memory area src to memory area dest.

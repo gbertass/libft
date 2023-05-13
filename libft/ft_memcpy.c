@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 15:41:40 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 15:56:56 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:21:13 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	memcpy(dest, src, n);
     printf("string pos memcpy(original): %s\n\n\n", dest);
 }*/
-

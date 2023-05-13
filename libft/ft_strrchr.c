@@ -6,12 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 11:46:13 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:04:41 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:20:57 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//searches for the LAST occurrence of the character c(Unsigned char) in the string pointed to, by the argument str.
+//searches for the LAST occurrence of the character c(Unsigned char) 
+//in the string pointed to, by the argument str.
 
 char	*ft_strrchr(const char *s, int c)
 {

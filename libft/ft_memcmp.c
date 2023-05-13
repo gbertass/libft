@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:23:33 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:08:08 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:15:42 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	int	original_mcmp;
 
 	resultado_mcmp = ft_memcmp(str_5, str_6, p);
-	printf("string1:%s\nstring2:%s\nn:%zu\nresultado:%d\n", str_5, str_6, p, resultado_mcmp);
+	printf("s1:%s\ns2:%s\nn:%zu\nresult:%d\n", str_5, str_6, p, resultado_mcmp);
 	original_mcmp = memcmp(str_5, str_6, p);
 	printf("resultado de memcmp(original): %d\n\n\n", original_mcmp);
 }*/

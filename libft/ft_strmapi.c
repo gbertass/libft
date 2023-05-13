@@ -6,13 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 18:44:49 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:24:20 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:27:53 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*Applies the function ’f’ to each character of the string ’s’, and passing its index as first argument
-to create a new string from successive applications of ’f*/
+/*Applies the function ’f’ to each character of the string s, and passing its 
+index as first argument to create a new string f/successive applications of f*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

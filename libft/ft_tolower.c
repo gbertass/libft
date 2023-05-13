@@ -6,12 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 20:19:04 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:02:13 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:21:27 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//The tolower() function takes an uppercase alphabet and convert it to a lowercase character
+//The tolower() function takes an uppercase alphabet and 
+//convert it to a lowercase character
 
 int	ft_tolower(int c)
 {

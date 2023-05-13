@@ -6,12 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 20:30:06 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:40:40 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:18:15 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//searches for the FIRST occurrence of the character c(unsigned char) in the string pointed to by the argument str
+//searches for the FIRST occurrence of the character c(unsigned char) 
+//in the string pointed to by the argument str
 
 char	*ft_strchr(const char *s, int c)
 {	

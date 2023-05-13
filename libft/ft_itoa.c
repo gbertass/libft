@@ -6,12 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 17:52:24 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:21:36 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:17:34 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Coverts the integer n into a character string. The string is placed in the buffer passed (must be large enough to hold the output).
+//Coverts the integer n into a character string. 
+//The string is placed in the buffer passed (must be large enough).
 
 int	ft_intlen(long nb)
 {

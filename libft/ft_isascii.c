@@ -6,12 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 13:10:47 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 15:54:12 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:13:39 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*The function tests for an ASCII character, which is any character between 0 and octal 0177*/
+/*The function tests for an ASCII character, 
+which is any character between 0 and octal 0177*/
 
 int	ft_isascii(int c)
 {

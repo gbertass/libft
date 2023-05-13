@@ -6,12 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 14:33:30 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:06:49 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:20:44 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Locates the first occurrence of of the character c(unsigned char) in the first N bytes of the string pointed to, by the argument str.
+//Locates the first occurrence of of the character c(unsigned char) 
+//in the first N bytes of the string pointed to, by the argument str.
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

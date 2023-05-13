@@ -6,13 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 12:54:35 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 15:52:48 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:19:50 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*tests for any character for which isalpha(3) or isdigit(3) is true.  The value of 
-the argument must be representable as an unsigned char or the value of EOF.*/
+/*tests for any character for which isalpha(3) or isdigit(3) is true.  
+The value of the argument must be representable as an unsigned char*/
 
 int	ft_isalnum(int c)
 {
@@ -29,4 +29,3 @@ int	ft_isalnum(int c)
     int original_isalnum = isalnum(102);
     printf("teste isalnum(original):  %d\n\n\n", original_isalnum);
 }*/
-

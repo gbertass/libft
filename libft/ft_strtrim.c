@@ -6,13 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 15:08:33 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:36:28 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:28:56 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*Return a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string.
-set: The reference set of characters to trim.*/
+/*Return a copy of s1 with the characters specified in set removed from the
+beginning/end of the string. set:The reference set of charac to trim*/
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

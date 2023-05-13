@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 17:43:58 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:05:47 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:19:28 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	resultado_ncmp = ft_strncmp(s1, s2, g);
 	printf("s1: %s\n s2: %s\n e n: %d\n\n", s1, s2, resultado_ncmp);
 	resultado_ncmp = strncmp(s1, s2, g);
-	printf("Funcao original:\n s1: %s\n s2: %s\n e n: %d\n\n\n", s1, s2, resultado_ncmp);
+	printf("Fun.original:\n s1:%s\n s2:%s\n e n: %d\n", s1, s2, resultado_ncmp);
 
 }*/

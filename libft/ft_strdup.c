@@ -6,13 +6,14 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 12:05:12 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:13:44 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 18:26:56 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*Functions are used to duplicate a string and returns a pointer to a null-terminated byte string, which is a duplicate 
- of the string pointed to by s. It returns a pointer to the duplicated string s.*/
+/*Functions are used to duplicate a string and returns a pointer to a null
+byte string, which is a duplicate of the string pointed to by s. 
+It returns a pointer to the duplicated string s.*/
 
 char	*ft_strdup(const char *s)
 {

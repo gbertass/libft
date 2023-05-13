@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 20:30:06 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:04:52 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 16:40:40 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_strchr(const char *s, int c)
 /*int	main()
 {
 	char	str_2[] = "bonjour";
-	int	c = '\0';
+	int	c = 'j';
 	char *resultado_strchr;
 	char *original_strchr;
 	resultado_strchr = ft_strchr(str_2, c);

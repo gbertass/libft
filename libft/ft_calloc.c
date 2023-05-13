@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 16:14:27 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/13 16:12:35 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 17:16:43 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,26 +27,15 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (ptr);
 }
 
-/*int	main()
+/*int	main(void)
 {
-	size_t nmemb = 5;
-	size_t size1 = 4;
-	int *a;
-	int *b;
-	int i = 0;
-	int j = 0;
-	a = (int *) ft_calloc(nmemb, size1);
-	while (i < nmemb)
-	{
-		printf("ft_calloc em a[%d]: %d\n",i, &a[i]);
-		i++;
-	}
-	printf("resultado ft_calloc: %d\n", a);
-	b = (int *) calloc(nmemb, size1);
-	while (j < nmemb)
-	{
-		printf("ft_calloc em a[%d]: %d\n",j, &b[j]);
-		j++;
-	}
-	printf("resultado ft_calloc(original): %d\n\n\n", b);
+	char	*test;
+	
+	test = ft_calloc(3, sizeof(char));
+	printf("%s\n", pointer);
+	printf("%c\n", pointer[0]);
+	
+	test = calloc(3, sizeof(char));
+	printf("Funcao original: %s\n", pointer);
+	printf("%c\n", pointer[0]);
 }*/

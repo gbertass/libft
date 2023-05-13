@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 18:41:18 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/11 18:55:42 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 17:31:07 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,37 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		*lst = NULL;
 	}
 }
+
+/*void 	del(void *content)
+{
+	content = NULL;
+}
+
+int     main(void)
+{
+        t_list  *l1 = malloc(sizeof(t_list));
+        t_list  *l2 = malloc(sizeof(t_list));
+        t_list  *l3 = malloc(sizeof(t_list));
+        t_list  *begin;
+
+        int     a = 1;
+        int     b = 2;
+        int     c = 3;
+
+        l1->content = (void *)&a;
+        l2->content = (void *)&b;
+        l3->content = (void *)&c;
+        l1->next = l2;
+        l2->next = l3;
+        l3->next = NULL;
+        ft_lstclear(&l1, del);
+        begin = l1;
+        while (begin)
+        {
+                printf("%d\n", *(int *)begin->content);
+                begin = begin->next;
+        }
+       // free(l1);
+       // free(l2);
+       // free(l3);
+}*/

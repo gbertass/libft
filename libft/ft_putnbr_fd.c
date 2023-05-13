@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 14:26:27 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/02 15:06:57 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 16:26:24 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,3 +53,14 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_function(n, fd);
 	}
 }
+
+/*int	main()
+{
+	ft_putnbr_fd(10, 1);
+	write(1, "\n", 1);
+	ft_putnbr_fd(-2147483648, 1);
+	write(1, "\n", 1);
+	ft_putnbr_fd(0, 1);
+	write(1, "\n", 1);
+	return (0);
+}*/

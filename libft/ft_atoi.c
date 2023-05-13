@@ -6,11 +6,12 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:05:27 by gbertass          #+#    #+#             */
-/*   Updated: 2023/04/20 15:14:50 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 16:10:11 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//Convert ASCII string to integer
 
 int	ft_atoi(const char *nptr)
 {
@@ -41,4 +42,16 @@ int	ft_atoi(const char *nptr)
 	return (nb_result);
 }
 
-//convert ASCII string to integer
+/*int	main()
+{
+	char	str_7[] = "       -+-921bc687";
+	int	result_1;
+    int test_1;
+	result_1 = ft_atoi(str_7);
+	printf("input: %s\n", str_7);
+	printf("resultado da funcao: %i\n\n", result_1);
+	printf("funcao original:\n");
+    test_1 = atoi(str_7);
+    printf("input: %s\n", str_7);
+	printf("resultado da funcao: %i\n\n\n", test_1);
+}*/

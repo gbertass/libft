@@ -6,11 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 18:13:45 by gbertass          #+#    #+#             */
-/*   Updated: 2023/04/28 18:44:00 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 16:22:45 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*Applies the function ’f’ on each character of the string passed as argument, passing its index
+as first argument. Each character is passed by address to ’f’ to be modified if necessary.*/
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
@@ -26,3 +28,16 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		}
 	}
 }
+
+/*int	main()
+{
+	void convert_to_uppercase(unsigned int i, char *c)
+	{
+		*c = ft_toupper(*c);
+	}
+
+	char s[] = "hello world";
+	ft_striteri(s, &convert_to_uppercase);
+	printf("%s\n", s);  // imprime "HELLO WORLD"
+	return 0;
+}*/

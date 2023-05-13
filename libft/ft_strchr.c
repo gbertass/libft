@@ -6,11 +6,12 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 20:30:06 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/04 14:02:28 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 16:04:52 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//searches for the FIRST occurrence of the character c(unsigned char) in the string pointed to by the argument str
 
 char	*ft_strchr(const char *s, int c)
 {	
@@ -29,5 +30,16 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)str + i);
 	return (NULL);
 }
-/*searches for the first occurrence of the character c (an unsigned char) 
-in the string pointed to by the argument str*/
+
+/*int	main()
+{
+	char	str_2[] = "bonjour";
+	int	c = '\0';
+	char *resultado_strchr;
+	char *original_strchr;
+	resultado_strchr = ft_strchr(str_2, c);
+	printf("string%s e c%d:\n", str_2, c);
+	printf("resultado de str[i]: %s\n", resultado_strchr);
+	original_strchr = strchr(str_2, c);
+	printf("resultado de str[i] (original): %s\n\n\n", original_strchr);
+}*/

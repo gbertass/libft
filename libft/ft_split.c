@@ -6,11 +6,13 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 17:14:41 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/04 17:10:38 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 16:20:01 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*Returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter. The array must end
+with a NULL pointer.*/
 
 int	countword(char const *s, char c)
 {
@@ -73,3 +75,16 @@ char	**ft_split(char const *s, char c)
 	str[j] = NULL;
 	return (str);
 }
+
+/*int	main()
+{
+	const char s[] = "elefante toma banho";
+	char c = 'a';
+	char **str = ft_split(s, c);
+	int	i = 0;
+	while(str[i])
+	{
+		printf("%s\n", str[i]);
+		i++;
+	}
+}*/

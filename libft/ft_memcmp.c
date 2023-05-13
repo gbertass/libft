@@ -6,11 +6,12 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 15:23:33 by gbertass          #+#    #+#             */
-/*   Updated: 2023/04/28 18:43:16 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 16:08:08 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//compares the first n bytes of memory area str1 and memory area str2.
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -31,5 +32,16 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-//compares the first n bytes of memory area str1 and memory area str2.
-// retorno?
+/*int	main()
+{
+	char	str_5[] = "abcdef";
+	char	str_6[] = "abc";
+	size_t p = 4;
+	int	resultado_mcmp;
+	int	original_mcmp;
+
+	resultado_mcmp = ft_memcmp(str_5, str_6, p);
+	printf("string1:%s\nstring2:%s\nn:%zu\nresultado:%d\n", str_5, str_6, p, resultado_mcmp);
+	original_mcmp = memcmp(str_5, str_6, p);
+	printf("resultado de memcmp(original): %d\n\n\n", original_mcmp);
+}*/

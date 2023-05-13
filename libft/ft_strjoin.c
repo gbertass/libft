@@ -6,11 +6,12 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 11:16:23 by gbertass          #+#    #+#             */
-/*   Updated: 2023/05/02 12:23:54 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 16:17:38 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//Returns a new string, which is the result of the concatenation of ’s1’+’s2.
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -40,3 +41,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	end[i + j] = '\0';
 	return (end);
 }
+
+/*int	main()
+{
+	const char s1[] = "box";
+	const char s2[] = "banho";
+	char *fun;
+	fun = ft_strjoin(s1,s2);
+	printf("resultado de ft_strjoin:%s", fun);
+}*/

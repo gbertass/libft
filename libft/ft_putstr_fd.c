@@ -6,7 +6,7 @@
 /*   By: gbertass <gbertass@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 14:45:03 by gbertass          #+#    #+#             */
-/*   Updated: 2023/04/27 15:23:21 by gbertass         ###   ########.fr       */
+/*   Updated: 2023/05/13 16:25:28 by gbertass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+
+/*int	main()
+{
+	char *s = "superMario";
+	ft_putstr_fd(s, 1);
+	printf("\n\n\n");
+}*/

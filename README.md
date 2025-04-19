@@ -60,3 +60,31 @@ The purpose of this project is to create your own standard C library by implemen
 1. Clone the repository:
    ```bash
    git clone https://github.com/your_username/libft.git
+
+2. Navigate to the project folder:
+   ```bash
+   cd libft
+   ```
+3. Compile the library with:
+      ```bash
+      make
+      ```
+4. Link the library to your project:
+      ```bash
+      gcc -L. -lft your_file.c -o your_program
+      ```
+5. Clean the object files:
+      ```bash
+      make clean
+      ```
+6. Clean everything (including the library files):
+      ```bash
+      make fclean
+      ```
+7. Rebuild the library:
+      ```bash
+      make re
+      ```
+  
+
+

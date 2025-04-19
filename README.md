@@ -1,4 +1,4 @@
-#Libft
+# Libft
 
 **libft** is a custom C library created for the 42 school curriculum. It includes a variety of functions commonly found in the C Standard Library, as well as some utilities you may need for other 42 projects.
 
